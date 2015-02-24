@@ -1,0 +1,39 @@
+/**
+ * Lincoln Electic Colors
+ * @author Dylan Burkey
+ * @group Colors
+ * @alias Variables
+ */
+
+$red: #A6192E !default;
+$black: #000000 !default;
+$white: #fff;
+
+/**
+ * Base Font Color
+ * @type string
+ * @author Dylan Burkey
+ * @group Colors
+ * @alias Variables
+ */
+
+ $base-font-color: #333 !default;
+
+@mixin color($color){
+	@if $color == $red {
+		color: $red;
+		color: rgb(172,0,45);
+	}
+	@else if($color == $black) {
+		color: $black;
+		color: rgb(0,0,0);
+	}
+	@else if($color == $white){
+		color: $white;
+		color: rgb( $white );
+
+	}
+	@else {
+		color: $base-font-color;
+	}
+}
